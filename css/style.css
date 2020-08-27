@@ -1,0 +1,966 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#logowhite {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.header-section {
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+}
+.header-section .bg-overlay {
+    position: relative;
+    z-index: 1;
+}
+.header-section .bg-overlay::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    opacity: 0.75;
+    z-index: -1;
+}
+.header {
+    padding: 30px 0 17px 0;
+    width: 100%;
+    animation-duration: 2s;
+}
+.header .logo {
+    float: left;
+    margin-right: 178px;
+}
+.header .logo a {
+    display: inline-block;
+}
+.header .main-menu {
+    float: left;
+    margin-top: -8px;
+}
+.header .main-menu ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: -5px;
+    position: relative;
+    z-index: 1;
+}
+.header .main-menu ul li a {
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 900;
+    padding: 15px 24px;
+    text-transform: uppercase;
+}
+.header .main-menu ul li a.active {
+    background: -webkit-linear-gradient(-240deg, #005185, #C6426E);
+    background:linear-gradient(-240deg, #005185, #C6426E);          
+    border-radius: 4px;
+}
+.header .main-menu ul li a:hover:after {
+    opacity: 1;
+    visibility: visible;
+    background: -webkit-linear-gradient(-240deg, #005185, #C6426E);
+    background:linear-gradient(-240deg, #005185, #C6426E);       
+}
+.header .main-menu ul li a:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: #261339;
+    z-index: -1;
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+}
+.header .top-social {
+    float: right;
+    margin-top: -9px;
+}
+.header .top-social a {
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 42px;
+}
+.header .top-social a.admin-btn {
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    background: #C6426E;
+    border-radius: 4px;
+    line-height: 55px;
+    margin-left: 25px;
+}
+.slicknav_menu {
+    display: none;
+}
+@media only screen and (max-width: 767px) {
+    .header .navigation {
+        display: none;
+    }
+    .header .main-menu {
+        float: none;
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+    .header .main-menu ul li {
+        display: block;
+    }
+    .slicknav_menu {
+        display: block;
+        background: transparent;
+        padding: 0;
+    }
+    .slicknav_nav {
+        background: #005185;
+        padding: 20px;
+    }
+    .slicknav_btn {
+        margin: 5px 0 25px;
+        padding: 0.738em 1em;
+    }
+    .slicknav_nav a:hover {
+        border-radius: 0;
+        background: -webkit-linear-gradient(-240deg, #005185, #C6426E);
+        background:linear-gradient(-240deg, #005185, #C6426E);         
+    }
+    .header .main-menu ul li a {
+        display: block;
+        text-align: center;
+    }
+    .header .main-menu ul li {
+        margin-right: 0;
+    }
+    .slicknav_nav .slicknav_row,
+    .slicknav_nav a {
+        padding: 5px 10px;
+        margin: 0 0;
+    }
+    .header .main-menu ul li a.active {
+        border-radius: 0;
+    }
+    .slicknav_nav ul {
+        margin: 0 0 0 0;
+    }
+    .header .top-social {
+        float: none;
+        margin-top: 0;
+        text-align: center;
+    }
+    .header .top-social a {
+        color: #fff;
+        display: inline-block;
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header .top-social a:hover {
+        border-radius: 4px;
+    }
+    .header .top-social a:last-child {
+        margin-right: 0;
+    }
+    .header .top-social a.admin-btn {
+        margin-left: 0;
+        line-height: 45px;
+    }
+}
+#lokacioni {
+    width: 100%;
+    height: 50%;
+}
+.foteri {
+    position: absolute;
+    margin-top: 100%;
+}
+#foterip {
+    text-align: center;
+}
+#butonishiko {
+    text-decoration: none;
+    list-style: none;
+}
+#pikat {
+    display: none;
+}
+#meshume {
+    display: none;
+}
+.butoni1 {
+    background-color:  #DE0300;
+    border: 0;
+    color: #FFF;
+    transition: 0.3s;
+}
+.btn {
+    background-image: url(../Photos/backgroundbutoni.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    color: white;  
+    transform: 0.5s;
+    transition: 0.5s;
+}
+.btn:hover {
+   -webkit-box-shadow: 18px 15px 19px -10px rgba(0,0,0,0.39);
+-moz-box-shadow: 18px 15px 19px -10px rgba(0,0,0,0.39);
+box-shadow: 18px 15px 19px -10px rgba(0,0,0,0.39);
+    border-radius: 20px 0 20px 0;
+    
+}
+
+.btn.butoni1:hover {
+    color: #FFF;
+    background: #005185;
+}
+#hr6 {
+    width: 100%;
+    height: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    background-color: #E5E5E5;
+}
+#hr7 {
+    width: 80%;
+    height: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    background-color: #E5E5E5;
+}
+#hr8 {
+    width: 60%;
+    height: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    background-color: #E5E5E5;
+
+}
+#hr9 {
+    width: 40%;
+    height: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    background-color: #E5E5E5;
+}
+#hr10 {
+    width: 20%;
+    height: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    background-color: #E5E5E5;
+    margin-top: 0;
+}
+.fotogradient {
+    position: relative;
+    display: inline-block;
+
+}
+.fotogradient:after {
+    content: '';
+    position:absolute;
+    left:0; 
+    top:0;
+    width:100%; 
+    height:100%;
+    display:inline-block;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 10%;
+    background: linear-gradient(-240deg, rgba(0, 81, 133,0.3) 0%,rgba(255, 0, 54, 0.3) 100%);
+}
+.card-img-top { 
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 10%;
+}
+
+@media only screen and (max-width: 768px) {
+    .card-img-top { 
+        margin-left: auto;
+        margin-right: auto;
+        height: 300px;    
+        max-width: 300px;
+        max-height: 300px;
+        border-radius: 10%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .card-img-top { 
+        margin-left: auto;
+        margin-right: auto;
+        height: 300px;    
+        max-width: 300px;
+        max-height: 200px;
+        border-radius: 10%;
+    } 
+}
+#blloqetjs {
+    display: none;
+    width: 100%;
+    height: 100%;
+    animation: 4s;
+}
+.containerbackground {
+    color: white;
+}
+
+.jumbotronbackground {
+    background-image: url(../Photos/backgroundtrupi.jpg);
+    background-position: center;
+    background-size: cover;
+
+
+}
+.card-title {
+    color: #272727;
+    font-weight: 900;
+}
+.card-text {
+    color: #272727;
+}
+
+#marke {
+    font-family: 'Poppins', sans-serif;
+    background-color: #261339;
+    color: white;
+    background: -webkit-linear-gradient(-240deg, #005185, #C6426E);
+    background:linear-gradient(-240deg, #005185, #C6426E);          
+    background-position: center;
+    background-size: 150% 200%;
+    padding: 5px 0 5px 0; 
+}
+.shikomeshume {
+    width:100%;
+    height:100%;
+    vertical-align:middle;
+
+}
+.fotologot{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.shikomeshume2 {
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    background-color: #C6426E;
+    color: #FFF;
+}
+.rrjetetsociale {
+    width:100%;
+    height:100%;
+    vertical-align:middle;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+@media only screen and (max-width: 768px) {
+    [class*="rrjetetsociale"] {
+        width:100%;
+        height:100%;
+        vertical-align:middle;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2px;
+    }
+    [class*="ikonarrjetetsociale"] {
+        width: 20px;
+        height: 20px;
+    }
+}
+#koha {
+    text-align: center;
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+}
+
+#butonirrjetetsociale {
+    text-decoration: none;
+    list-style: none; 
+}
+.rrjetetsociale2 {
+    margin-left:auto;
+    margin-right:auto;
+    display:inline-block;
+    background-color: #F4F4F4;
+    color: #000 ;
+    border: 0;
+    transition: 1s;
+}
+.btn.rrjetetsociale2:hover {
+    border-bottom: 2px solid skyblue; 
+
+}
+.ikonarrjetetsociale {
+    border-radius: 50%;
+}
+.kthehubtn {
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    background-color: #dd0a37;
+    color: #F4F4F4;
+    border: 0;
+}
+
+.kthehubtn2 {
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    background-color: #F4F4F4;
+    color: black;
+    border: 0;
+}
+.card.card1 {
+    height: 100%;
+    width: 100%;
+    border: 9px outset rgba(193,193,193,0.16);
+    border-radius: 0px 40px 0px 33px;
+    box-shadow: 5px 5px 5px 5px rgba(130, 0, 116 , 0.2);
+    transition: 0.5s;
+}
+.card.card1:hover {
+    height: 100%;
+    width: 100%;
+    border: 9px outset rgba(193,193,193,0.16);
+    border-radius: 40px 0 33px 0;
+    box-shadow: 5px 5px 5px 5px rgba(130, 0, 116 , 0.2);
+}
+.card-body {
+    text-align: center;
+}
+.col {
+    margin-top: 40px;   
+}
+.weektext {
+    text-align: center;
+    color: white;
+    margin-top: 60px;
+    font-family: 'Poppins', sans-serif;
+    animation-duration: 2s;
+    font-size: 30px;
+    
+}
+.weektext2 {
+    color: white;
+    text-align: center;
+}
+#logoweek {
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+.hr3 {
+    animation-duration: 2s;
+}
+.popmessage {
+    color: black;
+}
+#bg-nav{
+    width: 100%;
+    height: 730px;
+    background: -webkit-linear-gradient(-240deg, #005185, #C6426E);
+    background:linear-gradient(-240deg, #005185, #C6426E);    
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+a:focus {
+    outline: none !important;
+}
+a:hover {
+    text-decoration: none;
+}
+#womenrightsphoto {
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    filter: brightness(50%) blur(1px);
+}
+.carousel-inner {
+    max-height: 350px;
+    border: 2px solid #dedede;
+    border-radius: 5px;
+
+}
+@media only screen and (max-width: 768px) {
+    [class*="carousel-inner"] {
+        max-height:200px;
+        border: 2px solid #dedede;
+    }
+    #bg-nav{
+        width: 100%;
+        height: 630px;
+        background: -webkit-linear-gradient(-240deg, #005185, #C6426E);
+        background:linear-gradient(-240deg, #005185, #C6426E);    
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+}
+.mapa {
+    margin-top: 40px;
+}
+
+
+/* CSS PER EVENTIN */
+
+.eventi {
+    position: relative;
+}
+.eventi-countdown .row {
+    margin-top: 30px;
+}
+.eventi+.eventi {
+    margin-top: 60px;
+}
+.eventi:after {
+    content: "";
+    position: absolute;
+    left: 60px;
+    top: 0px;
+    bottom: 0px;
+    width: 4px;
+    background-color: #005185;
+}
+.eventi:last-child:after {
+    height: 60px;
+}
+.eventi+.eventi:before {
+    content: "";
+    position: absolute;
+    left: 60px;
+    height: 60px;
+    top: -60px;
+    width: 4px;
+    background-color: #005185;
+}
+.eventi .dita-eventit {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #C6426E;
+    z-index: 10;
+}
+.eventi .ora-eventit {
+    position: absolute;
+    left: 62px;
+    top: 60px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #005185;
+    z-index: 10;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.eventi .dita-eventit>div {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.eventi .dita-eventit .dita {
+    display: block;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+}
+.eventi .dita-eventit .viti {
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.eventi .permbajtja-eventit {
+    padding-left: 160px;
+    min-height: 120px;
+}
+.eventi .koha-even12pxtit {
+    font-size: 14px;
+}
+.eventi .koha-eventit i {
+    color: #dd0a37;
+}
+.eventi .permbajtja-eventit a {
+    color: #005185;
+}
+.btn.butoni3 {
+    margin-top: 60px;
+    text-align: center;
+    background-color:#C6426E;
+    color: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transition: 0.5s;
+    border: 0;
+    width: 50%;
+
+}
+
+
+/* CSS per Chatin */
+
+.chati {
+    border: 2px solid #E9E9E9;
+    background-color: #E9E9E9;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+.wrapper.chatidiv {
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.temajavagruas {
+    padding-top: 70px;
+}
+
+.jumbotron.javagruas h1 {
+    color: #261339;
+}
+.jumbotron.javagruas {
+    background: white;
+}
+.jumbotron.javagruas hr{
+    margin-top: 30px;
+    height: 5px;
+    background-color: #E9E9E9;
+    border-radius: 50%;
+
+}
+.jumbotron.temajavagruasbackground {
+
+    background-image: url(../Photos/backgroundtrupi.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #FFFFFF;
+}
+.jumbotron.nditext {
+    background: #E7E7E7;
+    border-top: 10px solid #FFF;
+    border-bottom: 10px solid #FFF;
+
+
+}
+.container-fluid.nditextwidth {
+    width:40%; 
+    text-align:justify;
+}
+.container-fluid.centro {
+margin-left: auto;
+margin-right: auto;
+}
+.hijezim {
+    border-color: #F4F4F4;
+    background-color: #F4F4F4;
+}
+.klikoketu {
+    width:50%;
+    margin-right: auto;
+    margin-left: auto;
+    height:100%;
+    display: block;
+    vertical-align:middle;
+    background-color: #C6426E;
+    border: 0;
+    color: #FFF;
+}
+.chati::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.chati img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.downloadbtn::before {
+    content: 'Click here to download the weekly program in text file.';
+    color: white;
+    display: block;
+    position: absolute;
+    bottom: 105%;
+    left: 0;
+    right: 0;
+    font-size: 15px;
+    border-radius: 20px;
+    white-space: nowrap;
+    background: #C6426E;
+    padding: 20px 0 20px 0;
+    transform: scale(0);
+    transition: ease-in 150ms;
+}
+.downloadbtn:hover::before {
+   
+    transform: scale(1);
+}
+.chati img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+}
+.time-right {
+    float: right;
+    color: #aaa;
+}
+.time-left {
+    float: left;
+    color: #999;
+}
+
+/* CSS per footerin */
+.container-fluid.foteri {
+    background-color: #005185;
+    width: 100%;
+    color: #FFF;
+margin: auto;
+    text-align: center;
+    height: 300px;
+    padding-top: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 10px;
+}
+
+/* CSS per countdown e fillimit te Eventit */
+
+.eventi-countdown {
+    padding: 55px 0 55px 0;
+    background-size: cover;
+}
+.eventi-countdown .emri-eventit h2 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 11px;
+    text-align: center;    
+}
+@media only screen and (max-width: 768px) {
+    .ditet #dita {
+        font-size: 23px;
+        margin-top: 30px;
+    }
+    .koha-countdown {
+        text-align: center;
+    }    
+    #paragrafi-ditet {
+        font-size: 14px;   
+    }
+    #paragrafi-ora {
+        font-size: 14px;   
+    }
+    #paragrafi-minuta {
+        font-size: 14px;   
+    }
+    #paragrafi-sekonda {
+        font-size: 14px;   
+    }     
+    .eventi-countdown {
+        padding: 0;
+    }
+    .weektext {
+        margin-top: 0px;
+    }
+    .ditet #ora {
+        font-size: 23px;       
+    } 
+    .ditet #minuta {
+        font-size: 23px;       
+    }
+    .ditet #sekonda {
+        font-size: 23px;       
+    }
+     .container-fluid.foteri {
+        height: 700px;
+    }
+}
+.eventi-countdown .emri-eventit h4 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+.eventi-countdown .emri-eventit span {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 9px 11px 9px 15px;
+    background: #C70075;
+    display: inline-block;
+    margin-left: 12px;
+    margin-top: 10px;    
+}
+.eventi-countdown .koha-countdown {
+    margin-top: -10px;
+}
+.eventi-countdown .koha-countdown .ditet {
+    display: inline-block;
+    margin-right: 35px;
+}
+.eventi-countdown .koha-countdown .ditet:last-child {
+    margin-right: 0;
+}
+.eventi-countdown .koha-countdown .ditet span {
+    display: block;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 6px;
+}
+.koha-countdown {
+    animation-duration: 2s;
+    text-align: center;
+}
+.eventi-countdown .koha-countdown .ditet p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+.kolona {
+    float: left;
+    width: 25%;
+    padding: 0 5px;
+}
+.rreshti {
+    margin: 0 -5px;
+}
+.rreshti:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px) {
+    .kolona {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .jumbotronbackground {
+    background-image: url(../Photos/backgroundtrupi2.jpg);
+    background-position: center;
+    background-size: cover;
+
+
+}
+}
+.trupi {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background: -webkit-linear-gradient(-240deg, #005185, #C6426E);
+    background:linear-gradient(-240deg, #005185, #C6426E);   
+    background-size: 200% 200%;
+    background-position: center;
+    animation: gradient 30s ease infinite;
+    color: #FFF;
+    border: 5px double rgba(193,193,193,0.32);
+    border-radius: 15px;
+
+}
+.trupi:hover {
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* CSS PER FOLESIT */
+
+.per-folesit {
+    margin-bottom: 20px;
+}
+.per-folesit .foto-folesit {
+    margin-bottom: 22px;
+}
+.per-folesit .foto-folesit img {
+    border-radius: 6px;
+    height: 200px;
+    width: 200px;
+}
+.titulli-folesit h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.per-folesit .teksti-folesit h3 {
+    color: #272727;
+    font-size: 20px;
+    font-weight: 900;
+}
+.per-folesit .teksti-folesit h3 span {
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+    .per-folesit .foto-folesit img {
+        border-radius: 6px;
+        height: 100px;
+        width: 100px;
+
+    }
+    #usaidlogo {
+        width: 180px;
+        height: 100px;
+    }
+    .container-fluid.nditextwidth {
+        width: 100%;
+    }
+}
+/* Pjesa tjeter */ 
+
+
